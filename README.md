@@ -75,3 +75,30 @@ Regularly monitor account activity, educate users about MFA benefits, and implem
 
 **Automation:** Use identity and access management (IAM) tools to automatically review and adjust access permissions based on predefined policies.
 
+#python code
+
+## Prerequisites
+
+Before using this script, make sure you have:
+
+1. Python installed on your machine.
+2. Installed the required Python packages using the following command:
+
+   ```bash
+   pip install -r requirements.txt
+
+3. Created a GitHub personal access token with appropriate permissions.
+
+## Usage
+
+###1.Configure the Script:
+1. GitHub Token: Replace YOUR_GITHUB_TOKEN in the script with your actual token.
+
+2. Repo Info: Set repo_name and organization_name variables.
+
+3. Branch Name: Adjust branch_name if not "master".
+
+### Run the Script:
+
+```bash
+python github_security_automation.py
