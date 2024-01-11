@@ -23,10 +23,8 @@ def check_and_fix_branch_protection(repository):
 
     if not branch.protected:
         print(f"Branch '{branch_name}' in '{repository.full_name}' repository is not protected.")
-        branch.edit_branch_protection(
-            required_status_checks=None,
-            enforce_admins=True,
-            restrictions=None
+        branch.edit_protection(
+           strict=True
         )
         print(f"Branch {branch_name} is now protected.")
     else:
